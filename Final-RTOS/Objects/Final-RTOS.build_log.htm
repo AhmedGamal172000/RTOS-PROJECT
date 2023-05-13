@@ -1,0 +1,1233 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ahmed Gamal, AinShams, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+H:\Introduction to RTOS\Keil\Final-RTOS\Final-RTOS.uvprojx
+Project File Date:  05/07/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+DIO.c(1): warning: In file included from...
+./DIO.h(47): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+DIO.c(21): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    while((SYSCTL_PRGPIO_R & (1<<port)) == 0){}; 
+                                               ^~
+DIO.c(192): warning: unannotated fall-through between switch labels [-Wimplicit-fallthrough]
+    default:
+    ^
+DIO.c(192): note: insert 'break;' to avoid fall-through
+    default:
+    ^
+    break; 
+DIO.c(207): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+    GPIO_PORTA_DATA_R = value;
+                      ~ ^~~~~
+DIO.c(211): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+    GPIO_PORTB_DATA_R  = value;
+                       ~ ^~~~~
+DIO.c(215): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+    GPIO_PORTC_DATA_R = value;
+                      ~ ^~~~~
+DIO.c(219): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+    GPIO_PORTD_DATA_R = value;
+                      ~ ^~~~~
+DIO.c(223): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+    GPIO_PORTE_DATA_R = value;
+                      ~ ^~~~~
+DIO.c(227): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+    GPIO_PORTF_DATA_R = value;
+                      ~ ^~~~~
+DIO.c(243): warning: implicit conversion changes signedness: 'unsigned long' to 'int' [-Wsign-conversion]
+    return Get_Bit(GPIO_PORTA_DATA_R,bit);
+    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./bitwise_operation.h(6): note: expanded from macro 'Get_Bit'
+#define Get_Bit(Register,Bit) ((Register & (1<<Bit)) >> Bit)
+                               ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+DIO.c(247): warning: implicit conversion changes signedness: 'unsigned long' to 'int' [-Wsign-conversion]
+    return Get_Bit(GPIO_PORTB_DATA_R,bit);
+    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./bitwise_operation.h(6): note: expanded from macro 'Get_Bit'
+#define Get_Bit(Register,Bit) ((Register & (1<<Bit)) >> Bit)
+                               ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+DIO.c(251): warning: implicit conversion changes signedness: 'unsigned long' to 'int' [-Wsign-conversion]
+    return Get_Bit(GPIO_PORTC_DATA_R,bit);
+    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./bitwise_operation.h(6): note: expanded from macro 'Get_Bit'
+#define Get_Bit(Register,Bit) ((Register & (1<<Bit)) >> Bit)
+                               ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+DIO.c(255): warning: implicit conversion changes signedness: 'unsigned long' to 'int' [-Wsign-conversion]
+    return Get_Bit(GPIO_PORTD_DATA_R,bit);
+    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./bitwise_operation.h(6): note: expanded from macro 'Get_Bit'
+#define Get_Bit(Register,Bit) ((Register & (1<<Bit)) >> Bit)
+                               ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+DIO.c(259): warning: implicit conversion changes signedness: 'unsigned long' to 'int' [-Wsign-conversion]
+    return Get_Bit(GPIO_PORTE_DATA_R,bit);
+    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./bitwise_operation.h(6): note: expanded from macro 'Get_Bit'
+#define Get_Bit(Register,Bit) ((Register & (1<<Bit)) >> Bit)
+                               ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+DIO.c(263): warning: implicit conversion changes signedness: 'unsigned long' to 'int' [-Wsign-conversion]
+    return Get_Bit(GPIO_PORTF_DATA_R,bit);
+    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./bitwise_operation.h(6): note: expanded from macro 'Get_Bit'
+#define Get_Bit(Register,Bit) ((Register & (1<<Bit)) >> Bit)
+                               ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+DIO.c(267): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+DIO.c(264): warning: 'break' will never be executed [-Wunreachable-code-break]
+     break;
+     ^~~~~
+DIO.c(260): warning: 'break' will never be executed [-Wunreachable-code-break]
+     break;
+     ^~~~~
+DIO.c(256): warning: 'break' will never be executed [-Wunreachable-code-break]
+     break;
+     ^~~~~
+DIO.c(252): warning: 'break' will never be executed [-Wunreachable-code-break]
+     break;
+     ^~~~~
+DIO.c(248): warning: 'break' will never be executed [-Wunreachable-code-break]
+     break;
+     ^~~~~
+DIO.c(244): warning: 'break' will never be executed [-Wunreachable-code-break]
+     break;
+     ^~~~~
+DIO.c(276): warning: implicit conversion changes signedness: 'unsigned long' to 'int' [-Wsign-conversion]
+    return Toggle_Bit(GPIO_PORTA_DATA_R,bit);
+    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./bitwise_operation.h(7): note: expanded from macro 'Toggle_Bit'
+#define Toggle_Bit(Register,Bit) (Register ^= (1<<Bit)) 
+                                  ~~~~~~~~~^~~~~~~~~~~
+DIO.c(279): warning: implicit conversion changes signedness: 'unsigned long' to 'int' [-Wsign-conversion]
+    return Toggle_Bit(GPIO_PORTF_DATA_R,bit);
+    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./bitwise_operation.h(7): note: expanded from macro 'Toggle_Bit'
+#define Toggle_Bit(Register,Bit) (Register ^= (1<<Bit)) 
+                                  ~~~~~~~~~^~~~~~~~~~~
+DIO.c(283): warning: non-void function does not return a value in all control paths [-Wreturn-type]
+}
+^
+DIO.c(280): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+DIO.c(277): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+DIO.c(318): warning: non-void function does not return a value in all control paths [-Wreturn-type]
+}
+^
+DIO.c(311): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+DIO.c(307): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+DIO.c(303): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+DIO.c(299): warning: 'break' will never be executed [-Wunreachable-code-break]
+     break;
+     ^~~~~
+DIO.c(295): warning: 'break' will never be executed [-Wunreachable-code-break]
+     break;
+     ^~~~~
+DIO.c(374): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+34 warnings generated.
+compiling DIO.c...
+compiling freertos_evr.c...
+Motor.c(1): warning: In file included from...
+./Motor.h(9): warning: In file included from...
+./DIO.h(47): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+Motor.c(1): warning: In file included from...
+./Motor.h(30): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+Motor.c(63): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+3 warnings generated.
+compiling Motor.c...
+compiling list.c...
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(13): warning: In file included from...
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(15): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void GPIOF_MY_Handler();
+                     ^
+                      void
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(16): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void GPIOA_MY_Handler();
+                     ^
+                      void
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(17): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void GPIOE_MY_Handler();
+                     ^
+                      void
+47 warnings generated.
+compiling system_TM4C123.c...
+assembling startup_TM4C123.s...
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(234): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxCriticalNesting == ~0UL );
+                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(300): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( configMAX_SYSCALL_INTERRUPT_PRIORITY );
+                                                        ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(305): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( portCPUID != portCORTEX_M7_r0p1_ID );
+                                                      ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(306): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( portCPUID != portCORTEX_M7_r0p0_ID );
+                                                      ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(356): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( ( portMAX_PRIGROUP_BITS - ulMaxPRIGROUPValue ) == configPRIO_BITS );
+                                                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(367): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        *pucFirstUserPriorityRegister = ulOriginalPriority;
+                                      ~ ^~~~~~~~~~~~~~~~~~
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(409): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxCriticalNesting == 1000UL );
+                                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(425): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( portNVIC_INT_CTRL_REG & portVECTACTIVE_MASK ) == 0 );
+                                                                            ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(432): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxCriticalNesting );
+                                     ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(820): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+                                                                     ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(836): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+                                                                                         ^
+11 warnings generated.
+compiling port.c...
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/MemMang/heap_4.c(220): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        configASSERT( ( ( ( size_t ) pxNewBlockLink ) & portBYTE_ALIGNMENT_MASK ) == 0 );
+                                                                                                        ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/MemMang/heap_4.c(284): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( ( ( ( size_t ) pvReturn ) & ( size_t ) portBYTE_ALIGNMENT_MASK ) == 0 );
+                                                                                         ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/MemMang/heap_4.c(303): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( heapBLOCK_IS_ALLOCATED( pxLink ) != 0 );
+                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/MemMang/heap_4.c(304): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxLink->pxNextFreeBlock == NULL );
+                                                       ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/MemMang/heap_4.c(414): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'BlockLink_t *' (aka 'struct A_BLOCK_LINK *') increases required alignment from 1 to 4 [-Wcast-align]
+    pxFirstFreeBlock = ( BlockLink_t * ) pucAlignedHeap;
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+compiling heap_4.c...
+main.c(3): warning: In file included from...
+./DIO.h(47): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(9): warning: In file included from...
+./Motor.h(30): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(56): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void TaskSwitch();
+               ^
+                void
+main.c(57): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void TaskDriver();
+               ^
+                void
+main.c(58): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void TaskPassenger();
+                  ^
+                   void
+main.c(59): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void TaskLimit();
+              ^
+               void
+main.c(60): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void GPIO_Initializations();
+                         ^
+                          void
+main.c(61): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void GPIOA_MY_Handler();
+                     ^
+                      void
+main.c(62): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void GPIOF_MY_Handler();
+                     ^
+                      void
+main.c(63): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void GPIOE_MY_Handler();
+                     ^
+                      void
+main.c(68): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void vApplicationIdleHook()
+                         ^
+                          void
+main.c(69): warning: function 'vApplicationIdleHook' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(110): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void GPIOA_MY_Handler()
+                     ^
+                      void
+main.c(110): warning: no previous prototype for function 'GPIOA_MY_Handler' [-Wmissing-prototypes]
+void GPIOA_MY_Handler()
+     ^
+main.c(61): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void GPIOA_MY_Handler();
+     ^
+                      void
+main.c(197): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void GPIOE_MY_Handler()
+                     ^
+                      void
+main.c(197): warning: no previous prototype for function 'GPIOE_MY_Handler' [-Wmissing-prototypes]
+void GPIOE_MY_Handler()
+     ^
+main.c(63): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void GPIOE_MY_Handler();
+     ^
+                      void
+main.c(237): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void TaskLimit()
+              ^
+               void
+main.c(237): warning: no previous prototype for function 'TaskLimit' [-Wmissing-prototypes]
+void TaskLimit()
+     ^
+main.c(59): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void TaskLimit();
+     ^
+               void
+main.c(238): warning: function 'TaskLimit' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(260): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void TaskSwitch()
+               ^
+                void
+main.c(260): warning: no previous prototype for function 'TaskSwitch' [-Wmissing-prototypes]
+void TaskSwitch()
+     ^
+main.c(56): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void TaskSwitch();
+     ^
+                void
+main.c(261): warning: function 'TaskSwitch' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(284): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void TaskDriver()
+               ^
+                void
+main.c(284): warning: no previous prototype for function 'TaskDriver' [-Wmissing-prototypes]
+void TaskDriver()
+     ^
+main.c(57): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void TaskDriver();
+     ^
+                void
+main.c(285): warning: function 'TaskDriver' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(320): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void TaskPassenger()
+                  ^
+                   void
+main.c(320): warning: no previous prototype for function 'TaskPassenger' [-Wmissing-prototypes]
+void TaskPassenger()
+     ^
+main.c(58): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void TaskPassenger();
+     ^
+                   void
+main.c(321): warning: function 'TaskPassenger' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(360): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void GPIO_Initializations()
+                         ^
+                          void
+main.c(360): warning: no previous prototype for function 'GPIO_Initializations' [-Wmissing-prototypes]
+void GPIO_Initializations()
+     ^
+main.c(60): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void GPIO_Initializations();
+     ^
+                          void
+main.c(391): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+int main()
+        ^
+         void
+main.c(402): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        vSemaphoreCreateBinary(SemaphoreDriver);   // <----------------
+                                               ^~
+main.c(403): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        vSemaphoreCreateBinary(SemaphoreSwitch);
+                                               ^
+main.c(404): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        vSemaphoreCreateBinary(SemaphorePassenger);
+                                                  ^
+main.c(405): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        vSemaphoreCreateBinary(SemaphoreLimit);
+                                              ^
+main.c(420): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.c(45): warning: no previous extern declaration for non-static variable 'SemaphoreDriver' [-Wmissing-variable-declarations]
+SemaphoreHandle_t SemaphoreDriver;
+                  ^
+main.c(45): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+SemaphoreHandle_t SemaphoreDriver;
+^
+main.c(46): warning: no previous extern declaration for non-static variable 'SemaphoreSwitch' [-Wmissing-variable-declarations]
+SemaphoreHandle_t SemaphoreSwitch;
+                  ^
+main.c(46): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+SemaphoreHandle_t SemaphoreSwitch;
+^
+main.c(47): warning: no previous extern declaration for non-static variable 'SemaphorePassenger' [-Wmissing-variable-declarations]
+SemaphoreHandle_t SemaphorePassenger;
+                  ^
+main.c(47): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+SemaphoreHandle_t SemaphorePassenger;
+^
+main.c(48): warning: no previous extern declaration for non-static variable 'SemaphoreLimit' [-Wmissing-variable-declarations]
+SemaphoreHandle_t SemaphoreLimit;
+                  ^
+main.c(48): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+SemaphoreHandle_t SemaphoreLimit;
+^
+main.c(49): warning: no previous extern declaration for non-static variable 'SemaphoreTimer' [-Wmissing-variable-declarations]
+SemaphoreHandle_t SemaphoreTimer;
+                  ^
+main.c(49): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+SemaphoreHandle_t SemaphoreTimer;
+^
+main.c(51): warning: no previous extern declaration for non-static variable 'xQueueDriver' [-Wmissing-variable-declarations]
+xQueueHandle xQueueDriver;
+             ^
+main.c(51): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+xQueueHandle xQueueDriver;
+^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(1068): note: expanded from macro 'xQueueHandle'
+    #define xQueueHandle                  QueueHandle_t
+                                          ^
+main.c(52): warning: no previous extern declaration for non-static variable 'xQueuePassenger' [-Wmissing-variable-declarations]
+xQueueHandle xQueuePassenger;
+             ^
+main.c(52): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+xQueueHandle xQueuePassenger;
+^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(1068): note: expanded from macro 'xQueueHandle'
+    #define xQueueHandle                  QueueHandle_t
+                                          ^
+main.c(35): warning: unused variable 'lock' [-Wunused-variable]
+static char lock = 0;
+            ^
+44 warnings generated.
+compiling main.c...
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(302): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(329): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(355): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( xReturn != pdFAIL );
+                                     ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(126): warning: padding struct 'struct QueueDefinition' with 2 bytes to align 'pxQueueSetContainer' [-Wpadded]
+        struct QueueDefinition * pxQueueSetContainer;
+                                 ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(100): warning: padding size of 'struct QueueDefinition' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct QueueDefinition /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(484): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( pxNewQueue );
+                                      ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(614): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xSemaphore );
+                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(646): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xSemaphore );
+                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(673): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxMutex );
+                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(729): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxMutex );
+                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(825): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( xHandle );
+                                   ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(844): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(845): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( pvItemToQueue == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                   ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(846): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( xCopyPosition == queueOVERWRITE ) && ( pxQueue->uxLength != 1 ) ) );
+                                                                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(849): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                                                                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(888): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                            queueYIELD_IF_USING_PREEMPTION();
+                                                            ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(907): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                queueYIELD_IF_USING_PREEMPTION();
+                                                                ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(920): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                            queueYIELD_IF_USING_PREEMPTION();
+                                                            ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1024): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1056): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1057): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( pvItemToQueue == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                   ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1058): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( xCopyPosition == queueOVERWRITE ) && ( pxQueue->uxLength != 1 ) ) );
+                                                                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1195): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvIncrementQueueTxLock( pxQueue, cTxLock );
+                                                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1225): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1229): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue->uxItemSize == 0 );
+                                            ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1234): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( pxQueue->uxQueueType == queueQUEUE_IS_MUTEX ) && ( pxQueue->u.xSemaphore.xMutexHolder != NULL ) ) );
+                                                                                                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1361): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvIncrementQueueTxLock( pxQueue, cTxLock );
+                                                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1387): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( ( pxQueue ) );
+                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1391): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( ( pvBuffer ) == NULL ) && ( ( pxQueue )->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                      ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1396): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                                                                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1425): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1485): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1533): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( ( pxQueue ) );
+                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1537): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue->uxItemSize == 0 );
+                                            ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1542): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                                                                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1588): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1668): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1741): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( ( pxQueue ) );
+                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1745): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( ( pvBuffer ) == NULL ) && ( ( pxQueue )->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                      ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1750): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                                                                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1785): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1846): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1890): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1891): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( pvBuffer == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1958): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvIncrementQueueRxLock( pxQueue, cRxLock );
+                                                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1983): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1984): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( pvBuffer == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1985): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue->uxItemSize != 0 ); /* Can't peek a semaphore. */
+                                            ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(2034): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( xQueue );
+                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(2051): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(2068): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(2079): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(2425): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(2466): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(3043): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueueSetContainer ); /* LCOV_EXCL_BR_LINE */
+                                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(3044): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueueSetContainer->uxMessagesWaiting < pxQueueSetContainer->uxLength );
+                                                                                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(3076): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvIncrementQueueTxLock( pxQueueSetContainer, cTxLock );
+                                                                       ^
+57 warnings generated.
+compiling queue.c...
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(329): warning: no previous extern declaration for non-static variable 'pxCurrentTCB' [-Wmissing-variable-declarations]
+portDONT_DISCARD PRIVILEGED_DATA TCB_t * volatile pxCurrentTCB = NULL;
+                                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(329): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+portDONT_DISCARD PRIVILEGED_DATA TCB_t * volatile pxCurrentTCB = NULL;
+                                 ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(278): warning: padding struct 'struct tskTaskControlBlock' with 2 bytes to align 'uxTCBNumber' [-Wpadded]
+        UBaseType_t uxTCBNumber;  /*< Stores a number that increments each time a TCB is created.  It allows debuggers to determine when a task has been deleted and then recreated. */
+                    ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(255): warning: padding size of 'struct tskTaskControlBlock' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct tskTaskControlBlock       /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(376): warning: no previous extern declaration for non-static variable 'uxTopUsedPriority' [-Wmissing-variable-declarations]
+const volatile UBaseType_t uxTopUsedPriority = configMAX_PRIORITIES - 1U;
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(376): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const volatile UBaseType_t uxTopUsedPriority = configMAX_PRIORITIES - 1U;
+               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(861): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( ( ( portPOINTER_SIZE_TYPE ) pxTopOfStack & ( portPOINTER_SIZE_TYPE ) portBYTE_ALIGNMENT_MASK ) == 0UL ) );
+                                                                                                                                 ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(914): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxPriority < configMAX_PRIORITIES );
+                                                     ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1084): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        prvAddTaskToReadyList( pxNewTCB );
+                                         ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1096): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            taskYIELD_IF_USING_PREEMPTION();
+                                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1125): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                taskRESET_READY_PRIORITY( pxTCB->uxPriority );
+                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1199): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( uxSchedulerSuspended == 0 );
+                                                         ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1200): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                portYIELD_WITHIN_API();
+                                      ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1220): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxPreviousWakeTime );
+                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1221): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( xTimeIncrement > 0U ) );
+                                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1222): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxSchedulerSuspended == 0 );
+                                                 ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1286): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            portYIELD_WITHIN_API();
+                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1308): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( uxSchedulerSuspended == 0 );
+                                                     ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1333): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            portYIELD_WITHIN_API();
+                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1354): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxTCB );
+                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1514): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxNewPriority < configMAX_PRIORITIES );
+                                                            ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1644): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1653): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    taskYIELD_IF_USING_PREEMPTION();
+                                                   ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1689): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                taskRESET_READY_PRIORITY( pxTCB->uxPriority );
+                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1746): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( uxSchedulerSuspended == 0 );
+                                                         ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1747): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                portYIELD_WITHIN_API();
+                                      ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1788): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTask );
+                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1830): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTaskToResume );
+                                     ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1845): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1853): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        taskYIELD_IF_USING_PREEMPTION();
+                                                       ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1885): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTaskToResume );
+                                     ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1931): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2066): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xReturn != errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY );
+                                                                        ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2181): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxSchedulerSuspended );
+                                        ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2201): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listREMOVE_ITEM( &( pxTCB->xEventListItem ) );
+                                                                 ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2203): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listREMOVE_ITEM( &( pxTCB->xStateListItem ) );
+                                                                 ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2204): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2267): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    taskYIELD_IF_USING_PREEMPTION();
+                                                   ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2347): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxTCB );
+                         ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2368): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            listGET_OWNER_OF_NEXT_ENTRY( pxFirstTCB, pxList ); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2372): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                listGET_OWNER_OF_NEXT_ENTRY( pxNextTCB, pxList ); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+                                                                ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2431): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( strlen( pcNameToQuery ) < configMAX_TASK_NAME_LEN );
+                                                                         ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(40): warning: In file included from...
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include/task.h(160): warning: padding struct 'struct xTASK_STATUS' with 3 bytes to align 'uxCurrentPriority' [-Wpadded]
+    UBaseType_t uxCurrentPriority;                /* The priority at which the task was running (may be inherited) when the structure was populated. */
+                ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include/task.h(154): warning: padding size of 'struct xTASK_STATUS' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct xTASK_STATUS
+               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2568): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( xIdleTaskHandle != NULL ) );
+                                                   ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2586): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( xTickCount + xTicksToJump ) <= xNextTaskUnblockTime );
+                                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2593): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( uxSchedulerSuspended );
+                                                ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2594): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( xTicksToJump != ( TickType_t ) 0 );
+                                                            ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2622): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxSchedulerSuspended == 0 );
+                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2647): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxTCB );
+                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2685): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvAddTaskToReadyList( pxTCB );
+                                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2743): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            taskSWITCH_DELAYED_LISTS();
+                                      ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2793): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listREMOVE_ITEM( &( pxTCB->xStateListItem ) );
+                                                                 ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2799): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        listREMOVE_ITEM( &( pxTCB->xEventListItem ) );
+                                                                     ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2808): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3062): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        taskSELECT_HIGHEST_PRIORITY_TASK(); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3086): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxEventList );
+                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3112): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxEventList );
+                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3116): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxSchedulerSuspended != 0 );
+                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3128): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    listINSERT_END( pxEventList, &( pxCurrentTCB->xEventListItem ) );
+                                                                    ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3140): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxEventList );
+                                   ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3152): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        listINSERT_END( pxEventList, &( pxCurrentTCB->xEventListItem ) );
+                                                                        ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3188): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxUnblockedTCB );
+                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3189): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    listREMOVE_ITEM( &( pxUnblockedTCB->xEventListItem ) );
+                                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3193): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        listREMOVE_ITEM( &( pxUnblockedTCB->xStateListItem ) );
+                                                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3194): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        prvAddTaskToReadyList( pxUnblockedTCB );
+                                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3214): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        listINSERT_END( &( xPendingReadyList ), &( pxUnblockedTCB->xEventListItem ) );
+                                                                                     ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3244): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxSchedulerSuspended != pdFALSE );
+                                                   ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3252): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxUnblockedTCB );
+                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3253): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    listREMOVE_ITEM( pxEventListItem );
+                                      ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3272): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    listREMOVE_ITEM( &( pxUnblockedTCB->xStateListItem ) );
+                                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3273): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    prvAddTaskToReadyList( pxUnblockedTCB );
+                                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3288): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxTimeOut );
+                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3311): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxTimeOut );
+                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3312): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxTicksToWait );
+                                 ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3469): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                taskYIELD();
+                           ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3513): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    configASSERT( xNextTaskUnblockTime >= xTickCount );
+                                                                      ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3428): warning: function 'prvIdleTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3832): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            listGET_OWNER_OF_NEXT_ENTRY( pxFirstTCB, pxList ); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3840): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                listGET_OWNER_OF_NEXT_ENTRY( pxNextTCB, pxList ); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+                                                                ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4112): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxMutexHolderTCB );
+                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4168): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( pxTCB == pxCurrentTCB );
+                                                 ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4169): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( pxTCB->uxMutexesHeld );
+                                                ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4202): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4248): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( pxTCB->uxMutexesHeld );
+                                                ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4275): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    configASSERT( pxTCB != pxCurrentTCB );
+                                                         ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4315): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        prvAddTaskToReadyList( pxTCB );
+                                                      ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4697): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxIndexToWait < configTASK_NOTIFICATION_ARRAY_ENTRIES );
+                                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4716): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4771): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxIndexToWait < configTASK_NOTIFICATION_ARRAY_ENTRIES );
+                                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4795): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4859): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxIndexToNotify < configTASK_NOTIFICATION_ARRAY_ENTRIES );
+                                                                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4860): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTaskToNotify );
+                                     ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4913): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    configASSERT( xTickCount == ( TickType_t ) 0 );
+                                                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4908): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                default:
+                ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4924): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                listREMOVE_ITEM( &( pxTCB->xStateListItem ) );
+                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4925): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvAddTaskToReadyList( pxTCB );
+                                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4928): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
+                                                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4950): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    taskYIELD_IF_USING_PREEMPTION();
+                                                   ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4984): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTaskToNotify );
+                                     ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4985): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxIndexToNotify < configTASK_NOTIFICATION_ARRAY_ENTRIES );
+                                                                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5056): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    configASSERT( xTickCount == ( TickType_t ) 0 );
+                                                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5051): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                default:
+                ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5067): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
+                                                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5071): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listREMOVE_ITEM( &( pxTCB->xStateListItem ) );
+                                                                 ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5072): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5078): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listINSERT_END( &( xPendingReadyList ), &( pxTCB->xEventListItem ) );
+                                                                                        ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5119): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTaskToNotify );
+                                     ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5120): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxIndexToNotify < configTASK_NOTIFICATION_ARRAY_ENTRIES );
+                                                                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5158): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
+                                                                                             ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5162): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listREMOVE_ITEM( &( pxTCB->xStateListItem ) );
+                                                                 ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5163): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5169): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listINSERT_END( &( xPendingReadyList ), &( pxTCB->xEventListItem ) );
+                                                                                        ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5206): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxIndexToClear < configTASK_NOTIFICATION_ARRAY_ENTRIES );
+                                                                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5332): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            listINSERT_END( &xSuspendedTaskList, &( pxCurrentTCB->xStateListItem ) );
+                                                                                    ^
+113 warnings generated.
+compiling tasks.c...
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(281): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xReturn );
+                               ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(75): warning: padding size of 'struct tmrTimerControl' with 3 bytes to alignment boundary [-Wpadded]
+    typedef struct tmrTimerControl                  /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+                   ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(363): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( xTimerPeriodInTicks > 0 ) );
+                                                   ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(395): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(437): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( xTimerTaskHandle != NULL ) );
+                                                    ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(446): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(456): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(477): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(507): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(517): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(569): warning: function 'prvTimerTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+    {
+    ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(650): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        portYIELD_WITHIN_API();
+                                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(779): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    configASSERT( pxCallback );
+                                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(862): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        configASSERT( ( pxTimer->xTimerPeriodInTicks > 0 ) );
+                                                                            ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(989): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(1014): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(1031): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/timers.c(1081): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( xTimerQueue );
+                                       ^
+18 warnings generated.
+compiling timers.c...
+linking...
+Program Size: Code=20222 RO-data=718 RW-data=16 ZI-data=17440  
+".\Objects\Final-RTOS.axf" - 0 Error(s), 332 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-FreeRTOS.10.5.1.pack
+                ARM.CMSIS-FreeRTOS.10.5.1
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Config Variant: FreeRTOS Version: 10.5.1
+   * Component: Core Variant: Cortex-M Version: 10.5.1
+   * Component: Heap Variant: Heap_4 Version: 10.5.1
+   * Component: Timers Version: 10.5.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/RTOS
+  ./RTE/_Target_1
+  C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/CMSIS/RTOS2/FreeRTOS/Include
+  C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include
+  C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F
+  C:/Users/lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/lenovo/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM.FreeRTOS::RTOS:Config:FreeRTOS:10.5.1
+      Include file:  Config/ARMCM/FreeRTOSConfig.h
+
+   * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.5.1
+      Include file:  Source/include/FreeRTOS.h
+      Include file:  Source/include/task.h
+      Source file:   Source/list.c
+      Source file:   Source/queue.c
+      Source file:   Source/tasks.c
+      Include file:  Source/include/semphr.h
+      Include file:  Source/include/queue.h
+      Source file:   Source/portable/GCC/ARM_CM4F/port.c
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/freertos_evr.c
+
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:10.5.1
+      Source file:   Source/portable/MemMang/heap_4.c
+
+   * Component: ARM.FreeRTOS::RTOS:Timers:10.5.1
+      Include file:  Source/include/timers.h
+      Source file:   Source/timers.c
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/system_TM4C123.c
+Build Time Elapsed:  00:00:11
+</pre>
+</body>
+</html>
